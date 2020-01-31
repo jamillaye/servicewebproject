@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="btnAdd" prefHeight="445.0" prefWidth="780.0" style="-fx-background-color: #F0FFFF;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="layout.AccueilController">
+   <children>
+      <TableView fx:id="tablepersonne" layoutY="-2.0" onMouseClicked="#tablepersoneclick" prefHeight="193.0" prefWidth="780.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="60.0" text="id" />
+          <TableColumn fx:id="col_nom" prefWidth="189.0" text="Nom" />
+            <TableColumn fx:id="col_prenom" prefWidth="174.0" text="Prenom" />
+            <TableColumn fx:id="col_adresse" prefWidth="182.0" text="Adresse" />
+            <TableColumn fx:id="col_tel" prefWidth="174.0" text="Tel" />
+        </columns>
+      </TableView>
+      <Label layoutX="61.0" layoutY="276.0" />
+      <ImageView fitHeight="27.0" fitWidth="37.0" layoutX="45.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-nom-40.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtNom" layoutX="45.0" layoutY="260.0" prefHeight="17.0" prefWidth="149.0" />
+      <ImageView fitHeight="27.0" fitWidth="37.0" layoutX="238.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-utilisateur-40.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtPrenom" layoutX="238.0" layoutY="260.0" prefHeight="17.0" prefWidth="149.0" />
+      <Button fx:id="btn_add" layoutX="45.0" layoutY="330.0" mnemonicParsing="false" onAction="#add" prefHeight="35.0" prefWidth="90.0" style="-fx-background-color: skyblue;" text="Ajouter" />
+      <Button fx:id="btn_supp" layoutX="238.0" layoutY="330.0" mnemonicParsing="false" onAction="#delete" prefHeight="35.0" prefWidth="90.0" style="-fx-background-color: skyblue;" text="Supprimer" />
+      <Button fx:id="btn_update" layoutX="435.0" layoutY="330.0" mnemonicParsing="false" onAction="#update" prefHeight="35.0" prefWidth="90.0" style="-fx-background-color: skyblue;" text="update" />
+      <ImageView fitHeight="27.0" fitWidth="37.0" layoutX="435.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-lieu-dans-le-monde-entier-40.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtAdresse" layoutX="435.0" layoutY="260.0" prefHeight="17.0" prefWidth="149.0" />
+      <ImageView fitHeight="27.0" fitWidth="37.0" layoutX="608.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-téléphone-40.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtTel" layoutX="608.0" layoutY="260.0" prefHeight="17.0" prefWidth="149.0" />
+      <ImageView fitHeight="111.0" fitWidth="149.0" layoutX="627.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/hacker.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
